@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
 import "./SortitionSumTreeFactory.sol";
 
@@ -16,7 +16,7 @@ contract ExposedSortitionSumTreeFactory {
     /**
      *  @dev Public getter for sortitionSumTrees.
      *  @param _key The key of the tree to get.
-     *  @return All of the tree's properties.
+     *  @return (K, stack, nodes) All of the tree's properties.
      */
     function _sortitionSumTrees(bytes32 _key) public view returns(uint K, uint[] stack, uint[] nodes) {
         return (
